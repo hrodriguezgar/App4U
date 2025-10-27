@@ -8,7 +8,7 @@ public class Articulo {
     private double precioVenta;
     private double gastosEnvio;
     private int tiempoPreparacion;
-
+    private final Map<String, Articulo> articulos = new LinkedHashMap<>();
     // Constructores
     public Articulo(String codigo, String descripcion, double precioVenta, double gastosEnvio, int tiempoPreparacion) {
         this.codigo = codigo;
@@ -66,3 +66,4 @@ public class Articulo {
                 " | Preparación: " + tiempoPreparacion + " min";
     }
 }
+
