@@ -7,6 +7,7 @@ public abstract class Cliente {
     private final String domicilio;
     private final String nif;
     private final String email;
+    private final Map<String, Cliente> clientes = new LinkedHashMap<>();
 
     // Constructor
     public Cliente(String nombre, String domicilio, String nif, String email) {
@@ -38,4 +39,5 @@ public abstract class Cliente {
     public String toString() {
         return nombre + " (Email: " + email + ")";
     }
+
 }
