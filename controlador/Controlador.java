@@ -2,8 +2,7 @@ public class Controlador {
 //(metodos) Gestión articulos
 
 
-
-  
+   
     System.out.print("Descripción: "); String descripcion = sc.nextLine();
         double precio = leerDouble("Precio venta: ", 0, Double.MAX_VALUE);
         double envio = leerDouble("Gastos de envío: ", 0, Double.MAX_VALUE);
