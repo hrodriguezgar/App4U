@@ -13,7 +13,8 @@ public class Pedido {
     private final Articulo articulo;
     private final int cantidad;
     private final LocalDateTime fechaHora;
-
+    private final Map<Integer, Pedido> pedidos = new LinkedHashMap<>();
+    
     // Formateador para mostrar fecha y hora: dd/MM/yyyy HH:mm:ss
     private static final DateTimeFormatter FORMATTER =
             DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
@@ -91,3 +92,4 @@ public class Pedido {
                 " | Total: " + totalFormateado + " €";
     }
 }
+
