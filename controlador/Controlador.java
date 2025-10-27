@@ -1,8 +1,8 @@
 public class Controlador {
 //(metodos) Gestión articulos
-
-    
-    System.out.print("Descripción: "); String descripcion = sc.nextLine();
+ private static void añadirArticulo() {
+        System.out.print("Código: "); String codigo = sc.nextLine();
+        System.out.print("Descripción: "); String descripcion = sc.nextLine();
         double precio = leerDouble("Precio venta: ", 0, Double.MAX_VALUE);
         double envio = leerDouble("Gastos de envío: ", 0, Double.MAX_VALUE);
         int tiempo = leerInt("Tiempo preparación (minutos): ", 1, Integer.MAX_VALUE);
@@ -22,6 +22,6 @@ public class Controlador {
         }
     }
 
-
-
-}
+    // -----(Metodos) Gestión de Clientes -----
+    private static void gestionClientes() {
+        System.out.println("\n--- 
